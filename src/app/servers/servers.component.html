@@ -1,0 +1,26 @@
+<div class="col-md-6">
+    <label>
+    ServerName
+    </label>
+    <input type="text" class="form-control" (input)="onUpdateServerName($event)" >
+    <label>
+        BindingServerName
+    </label>
+    <input type="text" class="form-control" [(ngModel)]="serverName">
+    <button class="btn btn-secondary" [disabled]="!allowNewServer" (click)="onCreateServer()">
+        Add something
+    </button>
+    <p>{{serverName}}</p>
+    <p>{{serverCreationStatus}}</p>
+</div>
+<div class="col-md-6">
+    <label>
+    UserName
+    </label>
+    <input type="text" class="form-control" [(ngModel)]="userName"  >
+    {{userName}}
+    <button class="btn btn-primary" [disabled]="userName.length === 0" (click)="onClickUserName()">
+        add user
+    </button>
+</div>
+<hr>

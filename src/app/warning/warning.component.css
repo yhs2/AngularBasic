@@ -1,0 +1,9 @@
+.warningBox{
+    margin: 50px;
+    padding: 50px;
+    box-sizing: border-box;
+    border-radius: 5%;
+    box-shadow: 5px 10px;
+    background-color: aqua;
+    border: 1px;
+}
