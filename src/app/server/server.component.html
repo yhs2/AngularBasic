@@ -1,1 +1,5 @@
-<h1> This is a server component</h1>
+<!-- for ngClass directive, {[ClassName]: [Condition]} -->
+<p  [ngStyle]="{backgroundColor: getColor()}"
+    [ngClass]="{online: serverStatus === 'online'}"> 
+    {{'Server'}} with ID {{serverId}} is {{getServerStatus()}}
+</p>
